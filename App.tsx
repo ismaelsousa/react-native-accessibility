@@ -12,11 +12,7 @@ import {
 const Accessibility: React.FC = () => {
   return (
     <SafeAreaView style={style.container}>
-      <View
-        accessible
-        accessibilityLabel="Ismael sousa de óculos e headset"
-        accessibilityRole="image"
-        style={style.avatarContainer}>
+      <View style={style.avatarContainer}>
         <Image
           width={200}
           height={200}
@@ -28,18 +24,8 @@ const Accessibility: React.FC = () => {
       </View>
       <View style={style.separator} />
       <View>
+        <Text style={style.text}>Nome: Ismael Sousa</Text>
         <Text
-          accessible
-          accessibilityLabel="Nome: Ismael Sousa"
-          accessibilityRole="text"
-          style={style.text}>
-          Nome: Ismael Sousa
-        </Text>
-        <Text
-          accessible
-          accessibilityRole="link"
-          accessibilityLabel="Instagram @ismaelmoreiraa (2 as)"
-          accessibilityHint="Vai para o instagram de ismael sousa"
           onPress={() =>
             Linking.openURL('https://www.instagram.com/ismaelmoreiraa/')
           }
@@ -49,10 +35,6 @@ const Accessibility: React.FC = () => {
       </View>
       <Pressable
         style={style.button}
-        accessible
-        accessibilityRole="button"
-        accessibilityLabel="Ir ao github"
-        accessibilityHint="Vai para site do github no perfil de ismael sousa"
         onPress={() => Linking.openURL('https://github.com/ismaelsousa')}>
         <Text style={style.text}>Ir ao Github</Text>
       </Pressable>
