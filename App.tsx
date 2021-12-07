@@ -33,6 +33,7 @@ const Accessibility: React.FC = () => {
           Insta: @ismaelmoreiraa
         </Text>
       </View>
+      <View style={style.separator} />
       <Pressable
         style={style.button}
         onPress={() => Linking.openURL('https://github.com/ismaelsousa')}>
