@@ -38,7 +38,7 @@ const Accessibility: React.FC = () => {
         <Text
           accessible
           accessibilityRole="link"
-          accessibilityLabel="Instagram @ismaelmoreiraa (2 as)"
+          accessibilityLabel="Instagram @ismaelmoreiraa "
           accessibilityHint="Vai para o instagram de ismael sousa"
           onPress={() =>
             Linking.openURL('https://www.instagram.com/ismaelmoreiraa/')
@@ -68,6 +68,7 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'black',
   },
   avatar: {
     width: 200,
